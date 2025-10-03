@@ -1,0 +1,185 @@
+@import url(./responsividade.css);
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --cor-preta: #000;
+    --cor-fundo: #fffaf1 ;
+    --cor-neutra: #c29254;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "SUSE", sans-serif;
+}
+
+/* cabeçalho*/
+
+header {
+    background-color: var(--cor-preta);
+    height: 70px;
+    align-items: center;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+li:hover{
+    border-bottom: 2px solid var(--cor-fundo);
+}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--cor-neutra);
+    text-transform: uppercase;
+
+}
+
+.bg-banner {
+    height: calc(100vh - 70px);
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+}
+
+/* sessão sobre mim */
+.texto-sobre{
+    width: 600px;
+}
+.texto-sobre h2{
+font-size: 48px;
+margin-bottom: 30px;
+}
+.texto-sobre p{
+    font-size: 20px;
+
+    & span{
+        color: var(--cor-neutra);
+    }
+}
+
+.img-sobre img{
+    width: 600px;
+    margin: 40px 0px;
+}
+
+/* sessão atuações */
+
+#atuacao{
+    background-color: var(--cor-preta);
+    color: var(--cor-neutra);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 305px;
+    height: 330px;
+    border-left: 1px solid var(--cor-neutra);
+    padding: 40px;
+}
+.card i{
+    font-size: 64px;
+}
+.card h3{
+font-size: 20px;
+padding: 10px 0px;
+color: #f7c789;
+text-transform: uppercase;
+}
+
+.card p{
+    width: 200px;
+}
+.card:nth-child(4n + 4){
+    border-right: 1px solid var(--cor-neutra);
+}
+
+
+/* sessão contato */
+#contato{
+    margin: 40px 0px;
+}
+
+.form h2{
+    color: var(--cor-neutra);
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form input {
+    width: 340px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    background-color: #ffefd6;
+}
+.form textarea{
+    outline: none;
+    border: 1px solid #fde4bd;
+    border-radius: 5px;
+}
+
+.redes{
+margin-bottom: 30px;
+
+}
+.redes a{
+    font-size: 48px;
+    color: var(--cor-neutra);
+    padding: 0px;
+    margin-right: 15px;
+}
+
+
+/* rodapé*/
+
+footer{
+    background-color:  var(--cor-preta);
+    color: var(--cor-neutra);
+}
+
+footer .container{
+    flex-direction: column;
+
+    & a{
+        font-size: 16px;
+        text-transform: none;
+        color: var(--cor-fundo);
+    }
+}
